@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post-Surgical Patient Brochures | Albury Wodonga Health</title>
+<meta name="description" content="Download post-surgical patient brochures from Albury Wodonga Health. Find information on anaesthetics, orthopaedics, ENT, and general surgery recovery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Open Sans', sans-serif; color: #334155; background: #f8fafc; line-height: 1.6; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; height: auto; }
+
+/* ===== UTILITY BAR ===== */
+.utility-bar { background: #f0f7fa; border-bottom: 1px solid #d0e4ec; }
+.utility-bar-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 40px; display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #64748b; }
+.utility-left { display: flex; align-items: center; gap: 16px; }
+.utility-left .divider { color: rgba(0,102,136,0.3); }
+.utility-right { display: flex; align-items: center; gap: 16px; }
+.utility-right a { transition: color 0.2s; }
+.utility-right a:hover { color: #006688; }
+.utility-right .donate { color: #006688; font-weight: 600; }
+
+/* ===== MAIN HEADER ===== */
+.main-header { background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.06); position: relative; z-index: 50; }
+.main-header-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 96px; display: flex; align-items: center; justify-content: space-between; }
+.logo-section { display: flex; align-items: center; gap: 16px; }
+.logo-section img { height: 48px; width: auto; opacity: 0.9; }
+.logo-divider { width: 1px; height: 40px; background: #e2e8f0; }
+.logo-text h1 { font-size: 24px; color: #1e293b; line-height: 1.1; font-weight: 700; }
+.logo-text p { font-size: 14px; color: #64748b; font-weight: 500; letter-spacing: 0.03em; margin-top: 4px; }
+.search-box { position: relative; }
+.search-box input { padding: 10px 40px 10px 16px; border-radius: 50px; border: 1px solid #e2e8f0; background: #f8fafc; font-size: 14px; width: 240px; outline: none; transition: all 0.2s; font-family: 'Open Sans', sans-serif; }
+.search-box input:focus { border-color: rgba(0,102,136,0.3); box-shadow: 0 0 0 3px rgba(0,102,136,0.08); }
+.search-icon { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: #94a3b8; }
+.hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; border-radius: 6px; }
+.hamburger:hover { background: #f1f5f9; }
+.hamburger svg { width: 24px; height: 24px; color: #475569; }
+
+/* ===== NAVIGATION BAR ===== */
+.nav-bar { background: #0f172a; color: #fff; position: relative; overflow: hidden; }
+.nav-bar-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; height: 48px; }
+.nav-links { display: flex; align-items: center; gap: 4px; flex-shrink: 0; z-index: 10; background: #0f172a; }
+.nav-links a { font-size: 14px; font-weight: 600; padding: 6px 12px; border-radius: 4px; transition: all 0.2s; white-space: nowrap; }
+.nav-links a:hover { background: rgba(255,255,255,0.1); }
+.nav-links a.active { background: #fff; color: #006688; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.nav-divider { width: 1px; height: 24px; background: rgba(255,255,255,0.2); margin: 0 16px; flex-shrink: 0; }
+.ticker-section { flex: 1; display: flex; align-items: center; overflow: hidden; height: 100%; }
+.ticker-icon { display: flex; align-items: center; justify-content: center; background: #d6336c; padding: 4px 10px; height: 32px; border-radius: 4px; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.ticker-icon svg { width: 16px; height: 16px; fill: #fff; }
+.ticker-wrap { flex: 1; overflow: hidden; margin-left: 16px; position: relative; height: 100%; display: flex; align-items: center; -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%); mask-image: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%); }
+.ticker-content { display: inline-block; white-space: nowrap; animation: ticker 35s linear infinite; font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.9); }
+.ticker-content:hover { animation-play-state: paused; }
+.ticker-content .bullet { margin: 0 32px; opacity: 0.5; }
+@keyframes ticker { 0% { transform: translateX(0%); } 100% { transform: translateX(-100%); } }
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb { max-width: 1200px; margin: 0 auto; padding: 32px 24px 0; display: flex; align-items: center; font-size: 14px; color: #64748b; flex-wrap: wrap; gap: 4px; }
+.breadcrumb a:hover { color: #006688; }
+.breadcrumb .sep { margin: 0 4px; }
+.breadcrumb .current { color: #1e293b; font-weight: 500; }
+
+/* ===== MAIN CONTENT ===== */
+.main-content { max-width: 1200px; margin: 0 auto; padding: 0 24px 48px; }
+.page-header { margin: 32px 0 48px; padding-bottom: 32px; border-bottom: 1px solid #e2e8f0; }
+.page-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+.accent-bar { width: 4px; height: 32px; background: #006688; border-radius: 4px; flex-shrink: 0; }
+.page-header h2 { font-size: 32px; color: #1e293b; }
+.page-header p { font-size: 18px; color: #475569; max-width: 720px; margin-top: 16px; line-height: 1.7; }
+
+/* ===== CATEGORY SECTIONS ===== */
+.category-section { margin-bottom: 48px; }
+.category-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+.category-icon { background: rgba(0,102,136,0.08); width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.category-icon svg { width: 22px; height: 22px; color: #006688; stroke: #006688; fill: none; }
+.category-header h3 { font-size: 22px; color: #1e293b; }
+.brochure-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+/* ===== BROCHURE CARDS ===== */
+.brochure-card { display: flex; align-items: flex-start; gap: 16px; padding: 16px; border-radius: 12px; border: 1px solid #e2e8f0; background: #fff; transition: all 0.3s ease; position: relative; overflow: hidden; }
+.brochure-card:hover { border-color: rgba(0,102,136,0.3); box-shadow: 0 8px 25px rgba(0,102,136,0.08); transform: translateY(-2px); }
+.brochure-card-icon { flex-shrink: 0; width: 48px; height: 48px; border-radius: 8px; background: rgba(0,102,136,0.05); color: #006688; display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
+.brochure-card:hover .brochure-card-icon { background: #006688; color: #fff; }
+.brochure-card-icon svg { width: 24px; height: 24px; }
+.brochure-card-text { flex: 1; min-width: 0; }
+.brochure-card-text h4 { font-size: 15px; font-weight: 600; color: #1e293b; line-height: 1.4; margin-bottom: 6px; transition: color 0.2s; }
+.brochure-card:hover .brochure-card-text h4 { color: #006688; }
+.brochure-card-meta { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #94a3b8; }
+.brochure-card-meta .badge { background: #f1f5f9; padding: 2px 8px; border-radius: 4px; font-weight: 600; color: #475569; }
+.brochure-card .ext-icon { position: absolute; top: 12px; right: 12px; opacity: 0; transition: opacity 0.2s; color: rgba(0,102,136,0.3); }
+.brochure-card:hover .ext-icon { opacity: 1; }
+.brochure-card .dl-icon { align-self: center; opacity: 0; transform: translateX(-8px); transition: all 0.3s; color: #006688; flex-shrink: 0; }
+.brochure-card:hover .dl-icon { opacity: 1; transform: translateX(0); }
+
+/* ===== INFO BOX ===== */
+.info-box { margin-top: 64px; background: #eff6ff; border: 1px solid #dbeafe; border-radius: 16px; padding: 32px; display: flex; align-items: center; gap: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+.info-box-icon { background: #fff; width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.06); color: #006688; }
+.info-box-icon svg { width: 32px; height: 32px; }
+.info-box-content { flex: 1; }
+.info-box-content h3 { font-size: 20px; color: #1e293b; margin-bottom: 6px; }
+.info-box-content p { color: #475569; font-size: 15px; }
+.info-box .btn-contact { display: inline-flex; align-items: center; padding: 12px 24px; background: #fff; border: 2px solid #006688; color: #006688; font-weight: 700; border-radius: 8px; font-size: 15px; transition: all 0.2s; white-space: nowrap; font-family: 'Open Sans', sans-serif; cursor: pointer; }
+.info-box .btn-contact:hover { background: #006688; color: #fff; }
+
+/* ===== FOOTER ===== */
+.footer { background: #0f172a; color: #cbd5e1; padding: 64px 0 0; border-top: 4px solid #006688; }
+.footer-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px; margin-bottom: 48px; }
+.footer h4 { color: #fff; font-size: 16px; text-transform: uppercase; letter-spacing: 0.08em; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; display: inline-block; margin-bottom: 24px; }
+.footer ul { list-style: none; }
+.footer .contact-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px; font-size: 14px; line-height: 1.6; }
+.footer .contact-list svg { width: 20px; height: 20px; color: #006688; flex-shrink: 0; margin-top: 2px; }
+.footer .contact-list a:hover { color: #fff; }
+.emergency-box { background: rgba(214,51,108,0.1); border: 1px solid rgba(214,51,108,0.2); border-radius: 8px; padding: 20px; }
+.emergency-box p { font-size: 14px; margin-bottom: 12px; }
+.btn-emergency { display: flex; align-items: center; justify-content: center; width: 100%; padding: 12px; background: #d6336c; color: #fff; font-weight: 700; border-radius: 6px; transition: background 0.2s; font-size: 15px; gap: 8px; }
+.btn-emergency:hover { background: #c2255c; }
+.mental-health { margin-top: 24px; }
+.mental-health h5 { color: #fff; font-size: 14px; font-weight: 700; margin-bottom: 8px; font-family: 'Montserrat', sans-serif; }
+.mental-health a { font-size: 22px; font-weight: 700; color: #006688; transition: color 0.2s; }
+.mental-health a:hover { color: #fff; }
+.quick-links li { margin-bottom: 12px; }
+.quick-links a { font-size: 14px; transition: color 0.2s; }
+.quick-links a:hover { color: #006688; }
+.acknowledgement p { font-size: 14px; color: #94a3b8; line-height: 1.7; }
+.social-icons { display: flex; gap: 12px; margin-top: 24px; }
+.social-icon { width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; color: #cbd5e1; transition: all 0.2s; font-family: 'Montserrat', sans-serif; }
+.social-icon:hover { background: #006688; color: #fff; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding: 24px 0; display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: #64748b; }
+.footer-bottom-links { display: flex; gap: 24px; }
+.footer-bottom-links a:hover { color: #cbd5e1; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .brochure-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  /* --- UTILITY BAR: Match AWH mobile style --- */
+  .utility-bar-inner { padding: 0; height: auto; flex-direction: row; justify-content: center; gap: 0; }
+  .utility-left { flex: 1; justify-content: center; padding: 10px 8px; gap: 6px; border-right: 1px solid #d0e4ec; }
+  .utility-left .enquiries { display: none; }
+  .utility-left .divider { display: none; }
+  .utility-left span:first-child { font-weight: 700; color: #d6336c; font-size: 13px; }
+  .utility-left .emergency-dot { display: inline-block; width: 8px; height: 8px; background: #d6336c; border-radius: 50%; margin-right: 4px; }
+  .utility-right { flex: 1; justify-content: center; padding: 10px 8px; gap: 6px; }
+  .utility-right a:not(.donate):not(.reception-link) { display: none; }
+  .utility-right .donate { display: none; }
+  .utility-right .reception-link { display: inline !important; font-size: 13px; color: #334155; font-weight: 400; }
+
+  /* --- HEADER: Logo left, search + hamburger right --- */
+  .main-header-inner { height: 72px; padding: 0 16px; }
+  .logo-section { gap: 10px; }
+  .logo-section img { height: 44px; }
+  .logo-divider { display: none; }
+  .logo-text p { display: none; }
+  .logo-text h1 { font-size: 16px; line-height: 1.2; }
+  .search-box { display: none; }
+  .hamburger { display: flex; align-items: center; }
+  .mobile-header-right { display: flex; align-items: center; gap: 8px; }
+  .mobile-search-btn { display: flex; background: none; border: none; cursor: pointer; padding: 8px; border-radius: 6px; }
+  .mobile-search-btn:hover { background: #f1f5f9; }
+  .mobile-search-btn svg { width: 24px; height: 24px; color: #334155; }
+
+  /* --- NAV BAR: Show ticker, hide nav links on mobile --- */
+  .nav-bar { overflow: visible; }
+  .nav-bar-inner { flex-direction: column; height: auto; align-items: stretch; padding: 0; }
+  .nav-links { display: none; }
+  .nav-links.open { display: flex; flex-direction: column; gap: 0; padding: 0; background: #0f172a; }
+  .nav-links.open a { padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,0.08); border-radius: 0; font-size: 15px; }
+  .nav-links.open a.active { background: rgba(0,102,136,0.2); color: #fff; box-shadow: none; }
+  .nav-divider { display: none; }
+  .ticker-section { height: 44px; padding: 0 16px; border-top: none; }
+
+  /* --- BREADCRUMB --- */
+  .breadcrumb { padding: 16px 16px 0; font-size: 13px; }
+
+  /* --- CONTENT --- */
+  .main-content { padding: 0 16px 32px; }
+  .brochure-grid { grid-template-columns: 1fr; gap: 12px; }
+  .page-header { margin: 20px 0 32px; padding-bottom: 20px; }
+  .page-header h2 { font-size: 22px; }
+  .page-header p { font-size: 15px; margin-top: 12px; }
+  .category-section { margin-bottom: 32px; }
+  .category-header h3 { font-size: 18px; }
+  .brochure-card { padding: 14px; gap: 12px; }
+  .brochure-card-icon { width: 40px; height: 40px; }
+  .brochure-card-text h4 { font-size: 14px; }
+
+  /* --- INFO BOX --- */
+  .info-box { flex-direction: column; text-align: center; padding: 24px 16px; margin-top: 32px; gap: 16px; }
+  .info-box-icon { width: 48px; height: 48px; }
+  .info-box-content h3 { font-size: 18px; }
+  .info-box-content p { font-size: 14px; }
+
+  /* --- FOOTER --- */
+  .footer { padding: 40px 0 0; }
+  .footer-inner { padding: 0 16px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; margin-bottom: 28px; }
+  .footer h4 { font-size: 14px; margin-bottom: 16px; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; padding: 16px 0; }
+}
+
+/* Hide mobile-only elements on desktop */
+@media (min-width: 769px) {
+  .mobile-header-right { display: none; }
+  .mobile-search-btn { display: none; }
+  .utility-left .emergency-dot { display: none; }
+  .utility-right .reception-link { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== TOP UTILITY BAR ===== -->
+<div class="utility-bar">
+  <div class="utility-bar-inner">
+    <div class="utility-left">
+      <span><span class="emergency-dot"></span>Emergency - <a href="tel:000" style="color:#006688;font-weight:700;text-decoration:underline;">Call '000'</a></span>
+      <span class="divider">|</span>
+      <span class="enquiries">General Enquiries: (02) 6058 4444</span>
+    </div>
+    <div class="utility-right">
+      <a href="tel:0260584444" class="reception-link">Reception - <span style="color:#006688;font-weight:600;">6058 4444</span></a>
+      <a href="#" target="_blank" rel="noopener noreferrer">Staff Login</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">Careers</a>
+      <a href="#" target="_blank" rel="noopener noreferrer" class="donate">Donate</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MAIN HEADER ===== -->
+<header class="main-header">
+  <div class="main-header-inner">
+    <div class="logo-section">
+      <img src="data:image/png;base64,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" alt="Albury Wodonga Health Logo">
+      <div class="logo-divider"></div>
+      <div class="logo-text">
+        <h1>Albury Wodonga Health</h1>
+        <p>Patient Information</p>
+      </div>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </div>
+    <div class="mobile-header-right">
+      <button class="mobile-search-btn" aria-label="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="hamburger" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== NAVIGATION BAR ===== -->
+<nav class="nav-bar">
+  <div class="nav-bar-inner">
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Services</a>
+      <a href="#" class="active">Patients &amp; Visitors</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="nav-divider"></div>
+    <div class="ticker-section">
+      <div class="ticker-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-9.33-5A5 5 0 0 0 2 8c0 1 .1 1.78.3 2.5h0A5.5 5.5 0 0 0 7 16h11a4 4 0 0 0 0-8z" fill="none" stroke="#fff" stroke-width="0"/><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M12 3v12M17 8l-5-5-5 5" fill="none" stroke="#fff" stroke-width="0"/><path d="M2 4l4 4 4-4M14 4l4 4 4-4" fill="none" stroke="#fff" stroke-width="0"/><path d="M21.7 11.3L18 7.6l-3.7 3.7M2 16l4-4 4 4" fill="none" stroke="none"/><path d="M3 11C3 7 6.58 4 11 4s8 3 8 7M5 20a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2zM19 20a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2z" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="ticker-wrap">
+        <div class="ticker-content">
+<!-- ========== NEWS TICKER ITEMS ========== -->
+<!-- To update news: Edit the text between <span> tags below -->
+<!-- To add more items: Copy a bullet + span pair and paste below -->
+          <span class="bullet">&bull;</span>
+          <span>COVID-19 Update: Visiting hours have changed. Please check the latest guidelines before visiting.</span>
+          <span class="bullet">&bull;</span>
+          <span>New Orthopaedic Ward opening in Wodonga Hospital next month.</span>
+          <span class="bullet">&bull;</span>
+          <span>Flu vaccination clinics now open for staff and patients.</span>
+          <span class="bullet">&bull;</span>
+          <span>Emergency Department wait times are currently higher than average.</span>
+<!-- ========== END NEWS TICKER ITEMS ========== -->
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== BREADCRUMB ===== -->
+<div class="breadcrumb">
+  <a href="#">Home</a>
+  <span class="sep">&rsaquo;</span>
+  <a href="#">Patients &amp; Visitors</a>
+  <span class="sep">&rsaquo;</span>
+  <span class="current">Post-Surgical Patient Brochures</span>
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="main-content">
+  <div class="page-header">
+    <div class="page-title-row">
+      <div class="accent-bar"></div>
+      <h2>Post-Surgical Patient Brochures</h2>
+    </div>
+    <p>Please find below a collection of information brochures designed to assist you in your recovery following surgery. Download the relevant documents for your procedure category.</p>
+  </div>
+
+  <!-- ===== ANAESTHETICS ===== -->
+  <section class="category-section">
+    <div class="category-header">
+      <div class="category-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      </div>
+      <h3>Anaesthetics</h3>
+    </div>
+    <div class="brochure-grid">
+
+      <!-- BROCHURE LINK: Preparing for Anaesthesia - Replace the href URL below with the actual OneDrive download link -->
+      <a href="https://onedrive.placeholder.com/anaesthetics/preparing-for-anaesthesia" target="_blank" rel="noopener noreferrer" class="brochure-card">
+        <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <div class="brochure-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <div class="brochure-card-text">
+          <h4>Preparing for Anaesthesia</h4>
+          <div class="brochure-card-meta"><span class="badge">PDF</span><span>Download (OneDrive)</span></div>
+        </div>
+        <svg class="dl-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+
+      <!-- BROCHURE LINK: Pain Management After Surgery - Replace the href URL below with the actual OneDrive download link -->
+      <a href="https://onedrive.placeholder.com/anaesthetics/pain-management" target="_blank" rel="noopener noreferrer" class="brochure-card">
+        <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <div class="brochure-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <div class="brochure-card-text">
+          <h4>Pain Management After Surgery</h4>
+          <div class="brochure-card-meta"><span class="badge">PDF</span><span>Download (OneDrive)</span></div>
+        </div>
+        <svg class="dl-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+
+      <!-- BROCHURE LINK: Epidural Information - Replace the href URL below with the actual OneDrive download link -->
+      <a href="https://onedrive.placeholder.com/anaesthetics/epidural-info" target="_blank" rel="noopener noreferrer" class="brochure-card">
+        <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <div class="brochure-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <div class="brochure-card-text">
+          <h4>Epidural Information</h4>
+          <div class="brochure-card-meta"><span class="badge">PDF</span><span>Download (OneDrive)</span></div>
+        </div>
+        <svg class="dl-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ===== ORTHOPAEDICS ===== -->
+  <section class="category-section">
+    <div class="category-header">
+      <div class="category-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z"/></svg>
+      </div>
+      <h3>Orthopaedics</h3>
+    </div>
+    <div class="brochure-grid">
+
+      <!-- BROCHURE LINK: Total Hip Replacement Guide - Replace the href URL below with the actual OneDrive download link -->
+      <a href="https://onedrive.placeholder.com/orthopaedics/hip-replacement" target="_blank" rel="noopener noreferrer" class="brochure-card">
+        <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <div class="brochure-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <div class="brochure-card-text">
+          <h4>Total Hip Replacement Guide</h4>
+          <div class="brochure-card-meta"><span class="badge">PDF</span><span>Download (OneDrive)</span></div>
+        </div>
+        <svg class="dl-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+
+      <!-- BROCHURE LINK: Total Knee Replacement Guide - Replace the href URL below with the actual OneDrive download link -->
+      <a href="https://onedrive.placeholder.com/orthopaedics/knee-replacement" target="_blank" rel="noopener noreferrer" class="brochure-card">
+        <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <div class="brochure-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <div class="brochure-card-text">
+          <h4>Total Knee Replacement Guide</h4>
+          <div class="brochure-card-meta"><span class="badge">PDF</span><span>Download (OneDrive)</span></div>
+        </div>
+        <svg class="dl-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+
+      <!-- BROCHURE LINK: Shoulder Arthroscopy Recovery - Replace the href URL below with the actual OneDrive download link -->
+      <a href="https://onedrive.placeholder.com/orthopaedics/shoulder-arthroscopy" target="_blank" rel="noopener noreferrer" class="brochure-card">
+        <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <div class="brochure-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <div class="brochure-card-text">
+          <h4>Shoulder Arthroscopy Recovery</h4>
+          <div class="brochure-card-meta"><span class="badge">PDF</span><span>Download (OneDrive)</span></div>
+        </div>
+        <svg class="dl-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+
+      <!-- BROCHURE LINK: Cast Care Instructions - Replace the href URL below with the actual OneDrive download link -->
+      <a href="https://onedrive.placeholder.com/orthopaedics/cast-care" target="_blank" rel="noopener noreferrer" class="brochure-card">
+        <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <div class="brochure-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <div class="brochure-card-text">
+          <h4>Cast Care Instructions</h4>
+          <div class="brochure-card-meta"><span class="badge">PDF</span><span>Download (OneDrive)</span></div>
+        </div>
+        <svg class="dl-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ===== ENT (Ear, Nose & Throat) ===== -->
+  <section class="category-section">
+    <div class="category-header">
+      <div class="category-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6.5-6 10.5"/><path d="M13 19h-2"/><path d="M9 2c0 .6.4 1 1 1h4c.6 0 1-.4 1-1"/><circle cx="12" cy="22" r="1"/></svg>
+      </div>
+      <h3>ENT (Ear, Nose &amp; Throat)</h3>
+    </div>
+    <div class="brochure-grid">
+
+      <!-- BROCHURE LINK: Tonsillectomy Post-Op Care - Replace the href URL below with the actual OneDrive download link -->
+      <a href="https://onedrive.placeholder.com/ent/tonsillectomy" target="_blank" rel="noopener noreferrer" class="brochure-card">
+        <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <div class="brochure-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <div class="brochure-card-text">
+          <h4>Tonsillectomy Post-Op Care</h4>
+          <div class="brochure-card-meta"><span class="badge">PDF</span><span>Download (OneDrive)</span></div>
+        </div>
+        <svg class="dl-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+
+      <!-- BROCHURE LINK: Grommets Insertion Information - Replace the href URL below with the actual OneDrive download link -->
+      <a href="https://onedrive.placeholder.com/ent/grommets" target="_blank" rel="noopener noreferrer" class="brochure-card">
+        <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <div class="brochure-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <div class="brochure-card-text">
+          <h4>Grommets Insertion Information</h4>
+          <div class="brochure-card-meta"><span class="badge">PDF</span><span>Download (OneDrive)</span></div>
+        </div>
+        <svg class="dl-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+
+      <!-- BROCHURE LINK: Sinus Surgery Recovery - Replace the href URL below with the actual OneDrive download link -->
+      <a href="https://onedrive.placeholder.com/ent/sinus-surgery" target="_blank" rel="noopener noreferrer" class="brochure-card">
+        <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <div class="brochure-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <div class="brochure-card-text">
+          <h4>Sinus Surgery Recovery</h4>
+          <div class="brochure-card-meta"><span class="badge">PDF</span><span>Download (OneDrive)</span></div>
+        </div>
+        <svg class="dl-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ===== GENERAL SURGERY ===== -->
+  <section class="category-section">
+    <div class="category-header">
+      <div class="category-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
+      </div>
+      <h3>General Surgery</h3>
+    </div>
+    <div class="brochure-grid">
+
+      <!-- BROCHURE LINK: Laparoscopic Cholecystectomy - Replace the href URL below with the actual OneDrive download link -->
+      <a href="https://onedrive.placeholder.com/general/cholecystectomy" target="_blank" rel="noopener noreferrer" class="brochure-card">
+        <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <div class="brochure-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <div class="brochure-card-text">
+          <h4>Laparoscopic Cholecystectomy</h4>
+          <div class="brochure-card-meta"><span class="badge">PDF</span><span>Download (OneDrive)</span></div>
+        </div>
+        <svg class="dl-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+
+      <!-- BROCHURE LINK: Hernia Repair Post-Op - Replace the href URL below with the actual OneDrive download link -->
+      <a href="https://onedrive.placeholder.com/general/hernia-repair" target="_blank" rel="noopener noreferrer" class="brochure-card">
+        <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <div class="brochure-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <div class="brochure-card-text">
+          <h4>Hernia Repair Post-Op</h4>
+          <div class="brochure-card-meta"><span class="badge">PDF</span><span>Download (OneDrive)</span></div>
+        </div>
+        <svg class="dl-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+
+      <!-- BROCHURE LINK: Wound Care Instructions - Replace the href URL below with the actual OneDrive download link -->
+      <a href="https://onedrive.placeholder.com/general/wound-care" target="_blank" rel="noopener noreferrer" class="brochure-card">
+        <svg class="ext-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <div class="brochure-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <div class="brochure-card-text">
+          <h4>Wound Care Instructions</h4>
+          <div class="brochure-card-meta"><span class="badge">PDF</span><span>Download (OneDrive)</span></div>
+        </div>
+        <svg class="dl-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ===== INFO BOX ===== -->
+  <div class="info-box">
+    <div class="info-box-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+    </div>
+    <div class="info-box-content">
+      <h3>Need more information?</h3>
+      <p>If you cannot find the brochure for your specific procedure, please contact the Pre-Admission Clinic or your surgeon's rooms directly.</p>
+    </div>
+    <a href="#" class="btn-contact">Contact Us</a>
+  </div>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      <div>
+        <h4>Contact Us</h4>
+        <ul class="contact-list">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>PO Box 326<br>Albury NSW 2640<br>Australia</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:0260584444">(02) 6058 4444</a>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@awh.org.au">info@awh.org.au</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Emergency</h4>
+        <div class="emergency-box">
+          <p>In a medical emergency, always call Triple Zero (000).</p>
+          <a href="tel:000" class="btn-emergency">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call 000
+          </a>
+        </div>
+        <div class="mental-health">
+          <h5>Mental Health Triage</h5>
+          <a href="tel:1300851572">1300 851 572</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="quick-links">
+          <li><a href="#">Patient Information</a></li>
+          <li><a href="#">Services Directory</a></li>
+          <li><a href="#">Find a Doctor</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Feedback &amp; Complaints</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="acknowledgement">
+        <h4>Acknowledgement</h4>
+        <p>Albury Wodonga Health acknowledges the Traditional Owners of the land on which our hospitals and services operate. We pay our respects to Elders past, present and emerging.</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook">F</a>
+          <a href="#" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Twitter">T</a>
+          <a href="#" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">L</a>
+          <a href="#" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">I</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Albury Wodonga Health. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Disclaimer</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function() {
+  var hamburgers = document.querySelectorAll('.hamburger');
+  var navLinks = document.querySelector('.nav-links');
+  hamburgers.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      navLinks.classList.toggle('open');
+      var isOpen = navLinks.classList.contains('open');
+      btn.setAttribute('aria-expanded', isOpen);
+      if (isOpen) {
+        btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>';
+      } else {
+        btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
